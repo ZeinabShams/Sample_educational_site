@@ -1,0 +1,32 @@
+.body{
+    background-color: rgb(39, 39, 61);
+}
+form{
+    text-align: center;
+    border-radius: 5px;
+    padding: 40px;
+    max-height: 650px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+
+form.registerBox{
+    width: 380px;
+}
+
+form h3{
+    font-size: 24;
+}
+form input{
+    text-align: center;
+}
+.forgetpass a{
+    color: rgb(173, 171, 171);
+}
+button btn-primary{
+    font-size: 22px;
+}
+.registerBox{
+    display: block;
+}
