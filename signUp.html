@@ -1,0 +1,130 @@
+<html dir="rtl" lang="fa">
+    <head>
+        <meta name="author" content="zeinab shams">
+        <meta name="description" content="this website provide person courses for increase knowladge">
+        <meta name="keywords" content="react, javascript, html,css,seo">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="scripts/bootstrap.rtl.min.css">
+        <script src="jquery/jquery-3.6.0.min.js"></script>
+
+    </head>
+    <body class="body">
+      <div class="main">
+        <form class="registerBox" action="">
+          <div>
+            <h3>فرم ثبت نام</h3>
+          </div>
+          <br >
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="نام و نام خانوادگی">
+            <label for="floatingInput">نام و نام خانوادگی*</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="‍‍‍پست الكترونيك">
+            <label for="floatingInput">پست الكترونيك</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="telephone" name="telefone" placeholder="شماره تلفن">
+            <label for="telefone">شماره تلفن*</label>
+          </div>
+          <!--
+          <label for="teacher">استاد مورنظر</label>
+          <select class="form-select form-select mb-3" aria-label=".form-select example" name="teacher" id="choiceTeacher">
+            <option selected></option>
+            <option value="زهرا محمدی">زهرا محمدی</option>
+                <option value="سارا سماعی">سارا سماعی</option>
+                <option value="علی اکبری">علی اکبری</option>
+                <option value="سمیه شمسی">سمیه شمسی</option>
+                <option value="فاطمه تنها">فاطمه تنها</option>
+                <option value="آرش مجیدی">آرش مجیدی</option>
+                <option value="وحید ملکی">وحید ملکی</option>
+                <option value="رقیه شاه محمدی">رقیه شاه محمدی</option>
+          </select>
+
+          <label for="course">دوره انتخابی</label>
+          <select class="form-select form-select" aria-label=".form-select example" name="course" id="choiceCourse">
+            <option selected></option>
+            <option value="برنامه نویسی سی شارپ مقدماتی">برنامه نویسی سی شارپ مقدماتی</option>
+            <option value="برنامه نویسی سی شارپ پیشرفته">برنامه نویسی سی شارپ پیشرفته</option>
+            <option value="برنامه نویسی پایتون">برنامه نویسی پایتون</option>
+            <option value="HTML $ CSS">HTML $ CSS</option>
+            <option value="جاوااسکریپت و کتابخانه ها">جاوااسکریپت و کتابخانه ها</option>
+            <option value="ReactJs">ReactJs</option>
+            <option value="wordpress">wordpress</option>
+            <option value="seo">seo</option>
+            <option value="adobe illustrator">adobe illustrator</option>
+            <option value="adobe photoshop">adobe photoshop</option>
+            <option value="ICDL">ICDL</option>
+            <option value="Excel Advance">Excel Advance</option>
+          </select>
+          -->
+          <label for="course">دوره انتخابی</label>
+          <select class="form-select form-select" aria-label=".form-select example" name="course" id="choiceCourse">
+            <option selected>انتخاب دوره</option>
+            <option value="برنامه نویسی سی شارپ مقدماتی">برنامه نویسی سی شارپ مقدماتی</option>
+            <option value="برنامه نویسی سی شارپ پیشرفته">برنامه نویسی سی شارپ پیشرفته</option>
+            <option value="برنامه نویسی پایتون">برنامه نویسی پایتون</option>
+            <option value="HTML $ CSS">HTML $ CSS</option>
+            <option value="جاوااسکریپت و کتابخانه ها">جاوااسکریپت و کتابخانه ها</option>
+            <option value="ReactJs">ReactJs</option>
+            <option value="seo">seo</option>
+            <option value="adobe illustrator">adobe illustrator</option>
+            <option value="adobe photoshop">adobe photoshop</option>
+            <option value="ICDL">ICDL</option>
+            <option value="Excel Advance">Excel Advance</option>
+          </select>
+
+          <label for="teacher">استاد مورنظر</label>
+          <select class="form-select form-select mb-3" aria-label=".form-select example" name="teacher" id="choiceTeacher">
+            <option value="please select country">انتخاب استاد</option>
+          </select>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">با قوانین و مقررات سایت موافقم.</label>
+          </div>
+          <br >
+          <button class="btn btn-success">ارسال</button>
+          
+        </form>
+      </div>
+
+    </body>
+    <script>
+      $(document).ready(function(){
+        $(".btn-success").click(function(){
+          alert('اطلاعات شما با موفقیت ارسال شد. همکاران ما در اسرع وقت با شما تماس میگیرند');
+        });
+      });
+
+      //for select course and show teachers
+      let info={
+       'برنامه نویسی سی شارپ مقدماتی':["زهرا محمدی"],
+       "برنامه نویسی سی شارپ پیشرفته":["زهرا محمدی"],
+       'برنامه نویسی پایتون':["زهرا سماعی"],
+       'HTML $ CSS':["آرش مجیدی","وحید ملکی","رقیه شاه محمدی"],
+       'جاوااسکریپت و کتابخانه ها':["آرش مجیدی","وحید ملکی","رقیه شاه محمدی"],
+       'ReactJs':["آرش مجیدی","وحید ملکی","رقیه شاه محمدی"],
+       'seo':["آرش مجیدی","وحید ملکی","رقیه شاه محمدی"],
+       'adobe illustrator':["علی اکبری"],
+       'adobe photoshop':["سمیه شمسی"],
+       'Excel Advance':["آرش مجیدی",'فاطمه تنها'],
+       'ICDL':["آرش مجیدی",'فاطمه تنها']
+      }
+      let courses=document.querySelector('#choiceCourse')
+      let teachers=document.querySelector('#choiceTeacher')
+
+      courses.addEventListener('change',function(){
+          let choices=info[courses.value]
+          if(choices===undefined){
+              teachers.innerHTML=''
+          }else{
+              teachers.innerHTML=''//خالی میکنیم تا انتخاب هایی که از قبل ماندن از بین بروند
+              choices.forEach(function(item){
+                  teachers.innerHTML+=`<option>${item}</option>`
+              })
+          }
+      })
+    </script>
+</html>
